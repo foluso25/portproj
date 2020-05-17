@@ -1,0 +1,54 @@
+/*
+Dark-blue: #454B66
+Bright blue: #677DB7
+Black coffee:  #322A26
+white #e0e2db
+*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/*NAVBAR*/
+nav ul{
+    list-style-type:none;
+    border-top: 6px solid #454B66;
+    background-color: #322A26 ;
+}
+ nav ul li a{
+     text-decoration:none;
+     display: block;
+     text-align: center;
+     font-size: 20px;
+     padding: 15px 25px;
+     color:#677DB7;
+ }
+  
+ nav ul li a:hover{
+    color: #e0e0e0;
+ }
+
+ .logo{
+     display:flex;
+     justify-content: space-between;
+     background: #677DB7;
+     color: #322A26;
+     font-size: 40px;
+ }
+
+ .logo:hover{
+     background-color: #e0e0e0;
+     color:#677DB7;
+ }
+
+ @media screen and (min-width:576px){
+     nav ul{
+         display: flex;
+         justify-content: space-between;
+         align-items: baseline;
+         flex-wrap: wrap;
+     }
+ }
