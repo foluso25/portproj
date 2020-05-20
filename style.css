@@ -189,6 +189,38 @@ color: #e0e2db;
 }
 
 .project-description p{
-    margin: 15px 0 25px 0;
+    margin: 15px 0 5px 0;
 
+}
+
+.project-description button{
+    font-size: 15px;
+    padding: 15px;
+    text-transform: uppercase;
+    margin: 0 10px;
+    color: #e0e2db;
+    border: 4px solid #677DFF;
+    font-weight:bolder;
+    background:#322A26;
+}
+
+.project-description button:hover{
+    color: #e0e2db;
+    background:#677DB7;
+}
+
+@media screen and (min-width:576px){
+    .projects-container{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        column-gap: 1em;
+    }
+}
+
+@media screen and (min-width:992px){
+    .projects-container{
+        display: grid;
+        grid-template-columns: repeat(4,auto);
+        column-gap: 1em;
+    }
 }
