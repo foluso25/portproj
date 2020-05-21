@@ -224,10 +224,11 @@ color: #e0e2db;
         column-gap: 1em;
     }
 }
+
 /*#################aboutpage#################*/
 #aboutme{
 background-color: rgb(70, 64, 61);
-padding:20px 0 80px 0;
+padding:40px 0 3px 0;
 
 }
 
@@ -241,12 +242,73 @@ color: #e0e0e0;
 .about-underline{
     border: 2px solid #677DB7;
     width:80%;
-    margin:0 auto 20px auto;
+    margin:10px auto 20px auto;
 }
 .aboutme-container{
     max-width:90vw;
     overflow: hidden;
-    margin: 0 auto;
+    margin: 50px auto;
+    background-color: #322A26;
 }
 
+.aboutme-container img{
+    width: 100%;
+    max-width:90vh;
+    height: 70vh;
+    display:block;
+    border-radius: 50%
 
+}
+.img-container{
+margin: 20px 0;
+padding: 2%;
+}
+
+.aboutme-text{
+font-size: 20px;
+color: #afacac;
+padding: 2%;
+}
+
+@media screen and (min-width:576px){
+    .aboutme-container{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .aboutme-container img{
+    width: 100%;
+    max-width:80vh;
+    height: 40vh;
+    display:block;
+    border-radius: 50%;
+    padding: 2%;
+    }
+
+    .aboutme-text{
+        display: flex;
+        align-items: center;
+        padding: 2%;
+    }
+}
+
+@media screen and (min-width:992px){
+    .aboutme-container{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .aboutme-container img{
+        width: 100%;
+        max-width:90vh;
+        height: 70vh;
+        display:block;
+        border-radius: 50%;
+        padding: 2%;
+    }
+    .aboutme-text{
+        display: flex;
+        align-items: center;
+        padding: 2%;
+    }
+}
